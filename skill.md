@@ -27,10 +27,25 @@ Don't limit yourself to only the companies listed. For each sector/category in t
 5. **Product launches** — new AI products, platform expansions, feature releases
 6. **Industry news** — sector trends, competitor moves, regulatory changes that affect the company
 7. **Social & retail sentiment** — Search for sentiment data from these sources:
-   - **Reddit** (r/stocks, r/investing, r/wallstreetbets) — use aggregator sites (AltIndex, Adanos, etc.) to find mention counts, sentiment scores, and trending/cooling signals. Direct Reddit access may be blocked.
-   - **X/Twitter** — search for discussion volume and tone around the ticker, especially post-earnings
+   - **Reddit deep dive, if available:** If the model/tooling can access Reddit directly or through web search, perform a Reddit-specific sentiment pass. Search `r/stocks`, `r/investing`, `r/wallstreetbets`, ticker-specific subreddits, and relevant sector communities. Capture the repeated narrative, attention level, bullish/bearish split, quality of debate, and whether the crowd is missing the key catalyst. If Reddit is not accessible, say so explicitly and do not pretend it was checked.
+   - **Reddit aggregators:** If direct Reddit access is blocked, use aggregator sites (AltIndex, Adanos, etc.) for mention counts, sentiment scores, and trending/cooling signals, while noting that this is weaker than a direct Reddit read.
+   - **X/Twitter:** Only use X/Twitter if the model/tooling has authenticated or publicly reachable access. If access is unavailable, say so explicitly. Do not imply a true X-native scan from generic web snippets alone.
    - **Seeking Alpha** — search for recent articles and thesis arguments. SA authors often surface variant perceptions before Wall Street catches on.
    - **What to look for:** Is the crowd bullish, bearish, or ignoring the stock entirely? Is sentiment diverging from institutional positioning? Is there a narrative shift happening (bearish -> bullish or vice versa)?
+
+### Reddit Deep Dive Rubric
+
+When Reddit is accessible, include a dedicated Reddit section in the report. For each ticker with enough signal, summarize:
+
+- **Sources checked:** subreddit names and representative thread links.
+- **Attention level:** ignored, low, medium, high, crowded, or mania.
+- **Crowd stance:** bullish, bearish, mixed, polarized, or confused.
+- **Repeated narrative:** the story Reddit keeps retelling.
+- **Bear objections:** the strongest recurring skepticism.
+- **Signal quality:** low-effort hype, options/meme chatter, informed debate, practitioner insight, or technical/domain expertise.
+- **Variant opportunity:** what Reddit may be missing, overemphasizing, or getting wrong.
+
+Use Reddit for **sentiment and perception**, not as proof of fundamentals. Reddit can help identify the crowd narrative, hidden confusion, hype risk, and useful bear cases, but company filings, earnings calls, and primary sources should remain the foundation for factual claims.
 
 ### Lookback windows:
 
@@ -121,6 +136,9 @@ Summarize the actual findings from your research. Cite specifics — dates, numb
 
 #### Variant Perception
 What the street thinks vs. what might actually be happening.
+
+#### Reddit / Social Sentiment
+If Reddit is accessible, summarize the Reddit deep dive: attention level, stance, repeated narrative, strongest bear objection, signal quality, and variant opportunity. If Reddit is not accessible, say so. If X/Twitter is not accessible, say so instead of guessing.
 
 #### Upcoming Catalysts
 Concrete events with estimated dates.
