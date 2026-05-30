@@ -26,7 +26,11 @@ Don't limit yourself to only the companies listed. For each sector/category in t
 4. **Partnership & customer news** — new deals, strategic partnerships, customer wins, deployment announcements
 5. **Product launches** — new AI products, platform expansions, feature releases
 6. **Industry news** — sector trends, competitor moves, regulatory changes that affect the company
-7. **Social sentiment** — Reddit (r/stocks, r/investing, r/wallstreetbets), X/Twitter, earnings call commentary threads
+7. **Social & retail sentiment** — Search for sentiment data from these sources:
+   - **Reddit** (r/stocks, r/investing, r/wallstreetbets) — use aggregator sites (AltIndex, Adanos, etc.) to find mention counts, sentiment scores, and trending/cooling signals. Direct Reddit access may be blocked.
+   - **X/Twitter** — search for discussion volume and tone around the ticker, especially post-earnings
+   - **Seeking Alpha** — search for recent articles and thesis arguments. SA authors often surface variant perceptions before Wall Street catches on.
+   - **What to look for:** Is the crowd bullish, bearish, or ignoring the stock entirely? Is sentiment diverging from institutional positioning? Is there a narrative shift happening (bearish -> bullish or vice versa)?
 
 ### Lookback windows:
 
