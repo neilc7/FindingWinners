@@ -1,40 +1,43 @@
 # Finding Winners
 
-A lightweight research framework for finding companies where fundamentals may be improving faster than investor expectations.
+A research framework for finding companies where fundamentals are improving faster than investor expectations — especially those benefiting from the AI narrative before the market catches on.
 
-The process is built around a few small, composable files:
+## How It Works
 
-- `watchlist.md`: human-readable watchlist organized by theme.
-- `data/watchlist.json`: machine-readable watchlist used by scripts and automations.
-- `skill.md`: the repeatable research rubric for catalyst detection.
-- `scripts/catalyst_scan.py`: creates a dated scan brief from the watchlist and skill.
+This repo is designed to be used with an AI agent (Cursor, Claude, etc.) that has web search capability. There are no scripts to run. You point the AI at this repo and tell it to do the research.
 
-## Quick Start
+### Key Files
 
-Create a full-watchlist catalyst scan:
+| File | Purpose |
+|---|---|
+| `goal.md` | Investment thesis, what we're looking for, case studies |
+| `skill.md` | The research process — step-by-step instructions for the AI agent |
+| `watchlist.md` | Companies to scan, grouped by theme |
+| `reports/catalyst-scans/` | Output — dated research reports |
 
-```bash
-python3 scripts/catalyst_scan.py
-```
+## Running a Scan
 
-Create a scan for specific tickers:
+Open this repo in Cursor (or any AI tool with web search) and say:
 
-```bash
-python3 scripts/catalyst_scan.py NVDA CRWD
-```
+**Full watchlist scan:**
+> Follow `skill.md` to run a catalyst scan on the full watchlist.
 
-Print the scan to stdout instead of writing a report:
+**Specific tickers:**
+> Follow `skill.md` to run a catalyst scan on DELL, ALAB, and DOCN.
 
-```bash
-python3 scripts/catalyst_scan.py --stdout
-```
+**Quick check on one name:**
+> Follow `skill.md` to do a deep dive on ALAB. Focus on the last 7 days.
 
-Generated reports are written to `reports/catalyst-scans/`.
+The agent will read the instructions, search the web for each company, and write a report to `reports/catalyst-scans/`.
 
 ## Research Cadence
 
-Suggested rhythm:
+| Frequency | What |
+|---|---|
+| Weekly | Full watchlist scan for early catalysts and narrative shifts |
+| Mid-week | Targeted scan for high-priority names around earnings or events |
+| Monthly | Watchlist cleanup — promote, archive, or add names |
 
-- Weekly full-watchlist scan for early catalysts and narrative changes.
-- Mid-week targeted scan for high-priority names around earnings, conferences, product launches, or regulatory events.
-- Monthly watchlist cleanup to promote, archive, or reprioritize names.
+## Adding Companies
+
+Edit `watchlist.md` directly. Add the ticker under the appropriate theme group with company name, theme, status, and any notes.

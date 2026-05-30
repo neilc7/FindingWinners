@@ -1,162 +1,147 @@
-# skill.md
+# Catalyst Scan — Research Skill
 
-## Goal
+You are a research analyst. Your job is to scan the watchlist for early business catalysts before a stock has already made its big move.
 
-Identify companies where fundamentals are improving faster than investor expectations.
+Read `goal.md` for the investment thesis and case studies that illustrate what we're looking for.
 
-Do NOT focus on short-term trading.
+## Input
 
-Do NOT focus on technical analysis.
+- **Watchlist:** `watchlist.md` — contains all companies grouped by theme
+- **Previous reports:** `reports/catalyst-scans/` — read the most recent report to understand what has already been covered and detect what changed since then
+- **Scope:** scan all companies unless the user specifies particular tickers
 
-Focus on information that can drive earnings revisions, multiple expansion, or investor re-rating over the next 3-12 months.
+## How to Research
 
----
+For each company on the watchlist, **search the web** for recent information. You must actually look things up — do not rely on prior knowledge alone.
 
-## Step 1: Recent Information Scan
+### Beyond the Watchlist
 
-Review:
+Don't limit yourself to only the companies listed. For each sector/category in the watchlist, also look for **other companies in that space** that might fit the thesis. If you find a company that is underappreciated, showing strong AI-related catalysts, or exhibiting the patterns described in `goal.md`, include it in the report even if it's not on the watchlist. Suggest adding it.
 
-* Earnings reports
-* Investor presentations
-* Conference appearances
-* Analyst upgrades/downgrades
-* Industry news
-* Customer announcements
-* Partnerships
-* Product launches
+### Search for:
 
-Look back:
+1. **Earnings reports & guidance** — recent quarterly results, revenue surprises, margin changes, guidance raises/cuts
+2. **Conference appearances** — commentary from tech conferences, investor days, fireside chats
+3. **Analyst activity** — upgrades, downgrades, price target changes, initiation of coverage
+4. **Partnership & customer news** — new deals, strategic partnerships, customer wins, deployment announcements
+5. **Product launches** — new AI products, platform expansions, feature releases
+6. **Industry news** — sector trends, competitor moves, regulatory changes that affect the company
+7. **Social sentiment** — Reddit (r/stocks, r/investing, r/wallstreetbets), X/Twitter, earnings call commentary threads
 
-* 30 days
-* 90 days
-* Since last earnings
+### Lookback windows:
 
----
+- Last 7 days (what just happened)
+- Last 30 days (recent developments)
+- Since last earnings report (full quarter context)
 
-## Step 2: Information Change Detection
+## Analysis Framework
 
-Ask:
+For each company, after gathering information, work through these steps:
 
-What materially changed?
+### 1. Information Change Detection
 
-Examples:
+What materially changed? Score it:
 
-* New product ramp
-* New customer wins
-* Capacity expansion
-* Backlog acceleration
-* Margin inflection
-* Guidance increase
-* Competitive share gain
+- **Major Positive** — new product ramp, large customer win, guidance raise, capacity expansion, margin inflection
+- **Moderate Positive** — incremental progress, small wins, in-line but improving trends
+- **Neutral** — no meaningful new information
+- **Moderate Negative** — slowing growth, competitive pressure, execution concerns
+- **Major Negative** — guidance cut, customer loss, margin compression, strategic misstep
 
-Score:
+### 2. Variant Perception
 
-* Major Positive
-* Moderate Positive
-* Neutral
-* Moderate Negative
-* Major Negative
+- What does Wall Street currently believe about this company?
+- What does management believe (based on their commentary, tone, and actions)?
+- What evidence contradicts the consensus view?
+- What is underappreciated — positively or negatively?
 
----
+### 3. Catalyst Identification
 
-## Step 3: Variant Perception
+List upcoming catalysts with estimated timing:
 
-Ask:
+- Next 1 month
+- Next 3 months
+- Next 6 months
+- Next 12 months
 
-What does Wall Street currently believe?
+Examples: earnings dates, product launches, conference appearances, capacity coming online, regulatory decisions, contract announcements.
 
-What does management believe?
+### 4. Mismatch Detection
 
-What evidence contradicts consensus?
+This is the most important step. Flag companies where:
 
-Identify:
+- Strong catalyst + muted stock reaction (ALAB pattern)
+- Improving fundamentals + stock still priced for old narrative (DELL pattern)
+- Clear AI pivot underway + market hasn't re-rated yet (DOCN pattern)
+- Crowd is ignoring the story entirely
 
-* Underappreciated positives
-* Underappreciated negatives
+### 5. Scoring
 
----
+Rate each dimension 1-5:
 
-## Step 4: Sentiment Scan
+| Dimension | What it measures |
+|---|---|
+| Information Change | How much has materially changed recently? |
+| Business Quality | Is this a good business with durable advantages? |
+| Valuation Support | Is the current price reasonable given the trajectory? |
+| Catalyst Strength | How strong and near-term are the upcoming catalysts? |
+| Sentiment Opportunity | Is the market under-positioned or ignoring this? |
 
-Review:
+**Total: /25**
 
-* Reddit
-* r/stocks
-* r/investing
-* r/wallstreetbets
-* X
-* Earnings call commentary
+## Output Format
 
-Determine:
+Write the report to `reports/catalyst-scans/YYYY-MM-DD-{scope}.md` where scope is `all` for full watchlist or the ticker(s) scanned.
 
-* Crowd bullish?
-* Crowd bearish?
-* Crowd ignoring story?
+Structure the report as:
 
-Flag:
+```
+# Catalyst Scan — YYYY-MM-DD
 
-* Narrative change
-* Sentiment inflection
+## Executive Summary
+Top 3-5 findings across the watchlist. What's most actionable right now?
 
----
+## Ranked Opportunities
+List companies from highest to lowest total score.
+Brief one-liner on why each ranks where it does.
 
-## Step 5: Catalyst Identification
+## Detailed Scans
 
-Potential catalysts:
+### {TICKER} — {Company Name}
+- **Score: X/25** (Info: X | Quality: X | Valuation: X | Catalyst: X | Sentiment: X)
+- **Signal:** [Major Positive / Moderate Positive / Neutral / Moderate Negative / Major Negative]
+- **Mismatch:** [Yes/No — explain if yes]
 
-* Earnings
-* Product launch
-* Customer deployment
-* Industry conference
-* Regulatory event
-* Capacity coming online
+#### What's New
+Summarize the actual findings from your research. Cite specifics — dates, numbers, quotes.
 
-Estimate:
+#### Variant Perception
+What the street thinks vs. what might actually be happening.
 
-* 1 month
-* 3 months
-* 6 months
-* 12 months
+#### Upcoming Catalysts
+Concrete events with estimated dates.
 
----
+#### Bull Case
+Why this could work in the next 3-12 months.
 
-## Step 6: Ranking
+#### Bear Case
+What could go wrong. Be honest.
 
-Score:
+#### Recommendation
+- Action: [Add to portfolio / Increase position / Hold / Reduce / Remove from watchlist / Keep watching]
+- Follow-up: [What to watch for next and when]
 
-Information Change (1-5)
+## Watchlist Changes
+- Companies to add
+- Companies to remove or archive
+- Conviction changes
+- New themes or sectors to explore
+```
 
-Business Quality (1-5)
+## Important Rules
 
-Valuation Support (1-5)
-
-Catalyst Strength (1-5)
-
-Sentiment Opportunity (1-5)
-
-Total Score = 25 max
-
----
-
-## Output
-
-Produce:
-
-1. Executive Summary
-2. Key New Information
-3. Why It Matters
-4. Market Perception
-5. Reddit/Social Sentiment
-6. Upcoming Catalysts
-7. Bull Case
-8. Bear Case
-9. Probability of Positive Re-rating
-10. Watchlist Ranking
-
----
-
-## Automation Prompt
-
-Use this when invoking the skill on a schedule:
-
-Review the watchlist in `data/watchlist.json` using the research process in `skill.md`. Look for early catalysts before major stock-price moves. Focus on new information from the last 30 days, the last 90 days, and since the last earnings report. Produce a ranked catalyst-scan brief with sources, key evidence, scoring, positive and negative variants, upcoming catalysts, and specific follow-up actions.
+- **Be specific.** Cite actual earnings dates, revenue numbers, analyst names, conference names. Vague statements like "strong growth" without evidence are useless.
+- **Be honest about uncertainty.** If you can't find recent information on a company, say so. Don't fabricate.
+- **Prioritize actionability.** The user wants to know what to do, not just what happened.
+- **Compare to previous scan.** If a prior report exists, note what changed since then.
+- **Flag new discoveries.** If your research surfaces a company NOT on the watchlist that fits the thesis, mention it in the Watchlist Changes section.
