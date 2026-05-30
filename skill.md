@@ -152,3 +152,11 @@ Produce:
 8. Bear Case
 9. Probability of Positive Re-rating
 10. Watchlist Ranking
+
+---
+
+## Automation Prompt
+
+Use this when invoking the skill on a schedule:
+
+Review the watchlist in `data/watchlist.json` using the research process in `skill.md`. Look for early catalysts before major stock-price moves. Focus on new information from the last 30 days, the last 90 days, and since the last earnings report. Produce a ranked catalyst-scan brief with sources, key evidence, scoring, positive and negative variants, upcoming catalysts, and specific follow-up actions.

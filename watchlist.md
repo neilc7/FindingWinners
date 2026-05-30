@@ -26,6 +26,67 @@ This watchlist contains companies that are candidates for deeper research and po
 
 ---
 
+# NeoClouds
+
+## AI Cloud Infrastructure
+
+### DOCN
+
+* Company: DigitalOcean
+* Theme: Cloud Infrastructure, AI Developer Cloud
+* Status: Watching
+* Conviction: TBD
+
+### NBIS
+
+* Company: Nebius Group
+* Theme: AI Cloud, GPU Infrastructure
+* Status: Watching
+* Conviction: TBD
+
+### IREN
+
+* Company: IREN
+* Theme: Data Centers, AI Cloud, Power Infrastructure
+* Status: Watching
+* Conviction: TBD
+
+### BRUN
+
+* Company: TBD
+* Theme: NeoClouds, AI Infrastructure
+* Status: Watching
+* Conviction: TBD
+
+---
+
+# Space / Drone
+
+## Space, Satellites, and Autonomous Systems
+
+### ASTS
+
+* Company: AST SpaceMobile
+* Theme: Satellite Connectivity, Direct-to-Device Communications
+* Status: Watching
+* Conviction: TBD
+
+### AVAV
+
+* Company: AeroVironment
+* Theme: Drones, Autonomous Systems, Defense Technology
+* Status: Watching
+* Conviction: TBD
+
+### RKLB
+
+* Company: Rocket Lab
+* Theme: Launch Services, Space Systems, Satellite Infrastructure
+* Status: Watching
+* Conviction: TBD
+
+---
+
 # Security
 
 ## Cybersecurity Platform Leaders
@@ -92,6 +153,7 @@ Potential categories:
 * Data Center Power
 * Data Center Cooling
 * NeoClouds
+* Space / Drone
 * Security
 * Software
 * Fintech
