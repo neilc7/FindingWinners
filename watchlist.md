@@ -130,6 +130,25 @@ Companies that are candidates for deeper research and potential investment. Grou
 
 ## Energy & Cooling — Data Center Power
 
+### CEG
+- **Company:** Constellation Energy
+- **Theme:** Nuclear Power, Clean Energy for Data Centers
+- **Notes:**
+  - Largest US nuclear fleet (~90% generation from nuclear). Acquired Calpine for gas/battery.
+  - Microsoft 20-year PPA for Crane (Three Mile Island restart, 830MW). Meta 20-year PPA for 1.1GW at Clinton.
+  - Q1 2026 EPS $2.74 (beat $2.59). FY2026 guide $11-12/share. 1GW nuclear uprates, $3.9B capex.
+  - Stock at ~$257 vs median analyst PT $404. PJM colocation rules are the key overhang.
+  - 25M-share lockup expiration June 30.
+
+### VST
+- **Company:** Vistra
+- **Theme:** Nuclear Power, Natural Gas Generation, Data Center Energy
+- **Notes:**
+  - Largest unregulated US power producer. Cogentrix 5,500MW gas acquisition closed.
+  - Meta 20-year PPA for 2,600MW nuclear (Beaver Valley + Comanche Peak). Perry nuclear restart underway.
+  - Record Q1 EBITDA. Targeting $10B+ cash generation 2026-2027.
+  - Stock at ~$147 vs analyst target ~$225. Down 7% YTD. P/E ~25x.
+
 ### VRT
 - **Company:** Vertiv Holdings
 - **Theme:** Data Center Cooling, Thermal Management, Power Infrastructure
